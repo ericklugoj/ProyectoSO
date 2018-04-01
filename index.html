@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Equipo Número 2</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+  </head>
+  <body>
+    <header class="contenedorHeader">
+      <div>
+      <img id="logotipo" src="images/logo.png" width="100%" border="0" alt="Logo">
+      </div>
+      <span class="burguer-button icon-menu" id="burguer-button"></span>
+      <nav class="contenedorMenu" id="menu">
+        <ul>
+        <li class="menu inicio seleccionado"><a href="index.html">INICIO</a></li>
+        <li class="menu servidor"><a href="servidor.html">SERVIDOR</a></li>
+        <li class="menu mysql"><a href="mysql.html">MYSQL</a></li>
+        <li class="menu impresora"><a href="impresora.html">IMPRESORA</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="contenedorCuerpo">
+      <h1 class = "titulos title-a">Bienvenido</h1>
+      <p class="textos">Sitio web con tutoriales para la instalacion y configuracion de windows server y sus servicios basicos (Dominio,DHCP,IIS,SQL y servicio de impresion). </p>
+      <h3 class = "titulos">Equipo</h3>
+      <p class = "textos">Número 2</p>
+      <h3 class="titulos">Integrantes</h3>
+      <p class="textos">
+            Erick Lugo
+        <br>Jesus Lopez
+        <br>Luis Solis
+        <br>Mario Ciau
+        <br>Cristopher Cahum
+      </p>
+      <h3 class="titulos">Grupo</h3>
+      <p class="textos">4SA</p>
+      <h3 class="titulos">Materia</h3>
+      <p class="textos">Taller de sistemas operativos</p>
+    </div>
+    <footer>Ingenieria En Sistemas Computacionales <br> Tecnologico De Mérida <br> 2018</footer>
+    <!-- Inicio de scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.5.4/blazy.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.7/hammer.min.js"></script>
+    <script>
+      var consulta = window.matchMedia('(max-width: 500px)');
+      consulta.addListener(mediaQuery);
+
+      var $burguerButton = document.getElementById('burguer-button');
+      var $menu = document.getElementById('menu');
+      function toggleMenu(){
+        $menu.classList.toggle('active')
+      };
+      function showMenu(){
+        $menu.classList.add('active');
+      };
+      function hideMenu(){
+        $menu.classList.remove('active');
+      };
+
+      function mediaQuery() {
+        if (consulta.matches) {
+          console.log('se cumplió la condicion');
+          $burguerButton.addEventListener('touchstart', toggleMenu);
+        } else {
+          $burguerButton.removeEventListener('touchstart', toggleMenu);
+          console.log('no se cumplió la condicion');
+        }
+      }
+      mediaQuery();
+      var bLazy = new Blazy({
+          selector: 'img'
+      });
+      var $body = document.body;
+
+      var gestos = new Hammer($body);
+      gestos.on('swipeleft', hideMenu);
+      gestos.on('swiperight', showMenu);
+    </script>
+  </body>
+</html>
