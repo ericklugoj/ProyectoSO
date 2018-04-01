@@ -119,6 +119,7 @@ footer {
   height: 100px;
   text-align: center;
 }
+
 .burguer-button {
   width: 40px;
   border-radius: 50%;
@@ -134,6 +135,15 @@ footer {
   color: white;
   z-index: 3;
   display: none;
+}
+
+.parrafo {
+  text-align: justify;
+}
+
+.imagen {
+  display: block;
+  margin: auto;
 }
 
 @media screen and (max-width: 500px){
