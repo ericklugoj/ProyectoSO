@@ -141,10 +141,15 @@ footer {
   text-align: justify;
 }
 
-.imagen {
+
+.contenedorCuerpo img {
   display: block;
   margin: auto;
 }
+/* .imagen {
+  display: block;
+  margin: auto;
+} */
 
 @media screen and (max-width: 500px){
   .menu{
