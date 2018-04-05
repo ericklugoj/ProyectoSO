@@ -200,12 +200,9 @@ footer {
     width: 100%;
   }
   .imagen{
-    width: 320px;
+    width: 100%;
   }
-  .contenedorCuerpo img{
-    display: initial;
-    margin-bottom: 25px;
-  }
+
 
   .title-a{
     padding: 0;
