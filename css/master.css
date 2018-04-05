@@ -201,6 +201,8 @@ footer {
   }
   .imagen{
     width: 320px;
+    display: initial;
+    margin: 0;
   }
 
   .title-a{
