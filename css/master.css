@@ -201,8 +201,10 @@ footer {
   }
   .imagen{
     width: 320px;
+  }
+  .contenedorCuerpo img{
     display: initial;
-    margin: 0;
+    margin-bottom: 25px;
   }
 
   .title-a{
