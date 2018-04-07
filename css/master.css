@@ -49,6 +49,7 @@ body {
 .contenedorMenu ul {
   display: inline;
 }
+
 .contenedorMenu {
   width: 100%;
   border-top: 1px solid gray;
@@ -63,6 +64,7 @@ body {
 
   display: inline-block;
 }
+
 .contenedorMenu a {
   color: white;
   text-decoration: none;
@@ -141,7 +143,6 @@ footer {
   text-align: justify;
 }
 
-
 .contenedorCuerpo img {
   display: block;
   margin: auto;
@@ -149,6 +150,10 @@ footer {
 
 .contenedorCuerpo a {
   text-decoration: none;
+}
+
+.contenedorCuerpo h4,h2,h1{
+  text-align: center;
 }
 
 .serverImg {
