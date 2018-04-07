@@ -49,6 +49,7 @@ body {
 .contenedorMenu ul {
   display: inline;
 }
+
 .contenedorMenu {
   width: 100%;
   border-top: 1px solid gray;
@@ -63,6 +64,7 @@ body {
 
   display: inline-block;
 }
+
 .contenedorMenu a {
   color: white;
   text-decoration: none;
@@ -108,7 +110,7 @@ body {
   justify-content: center;
   width: 80%;
   margin-bottom: 200px;
-  text-align: justify;
+  text-align: center;
 }
 
 footer {
@@ -140,7 +142,6 @@ footer {
 .parrafo {
   text-align: justify;
 }
-
 
 .contenedorCuerpo img {
   display: block;
