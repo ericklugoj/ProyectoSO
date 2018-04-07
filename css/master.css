@@ -108,7 +108,7 @@ body {
   justify-content: center;
   width: 80%;
   margin-bottom: 200px;
-  text-align: center;
+  text-align: justify;
 }
 
 footer {
@@ -149,6 +149,10 @@ footer {
 
 .contenedorCuerpo a {
   text-decoration: none;
+}
+
+.contenedorCuerpo h4,h2,h1{
+  text-align: center;
 }
 
 .serverImg {
