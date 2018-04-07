@@ -146,10 +146,10 @@ footer {
   display: block;
   margin: auto;
 }
-/* .imagen {
-  display: block;
-  margin: auto;
-} */
+
+#serverImg {
+  border-radius: 25px;
+}
 
 @media screen and (max-width: 500px){
   .menu{

@@ -24,8 +24,10 @@
     </header>
     <div class="contenedorCuerpo">
       <h1 class=" title-a">Servidor</h1>
+      <img src="images/server.png" alt="" id="serverImg"> <br>
       <h2 class="titulos" >Configuracion del dominio</h2>
       <p class="textos parrafo">
+
         La tarea inicial arranca desde el momento en que instalamos Windows Server 2016 en el equipo,
         ya que allí debemos configurar la cuenta de Administrador con su respectiva contraseña. <br><br>
 
@@ -58,6 +60,45 @@
          Pulsamos Aceptar y en el mensaje desplegada seleccionamos Sí <br><br>
 
          <img src="images/dominio5.png" class="imagen" alt=""> <br>
+
+         Reiniciamos el equipo para que el nombre sea modificado y podemos validar desde el administrador el nuevo nombre del equipo. <br><br>
+
+         <img src="images/dominio6.png" alt=""> <br>
+
+         Como ha sido mencionado anteriormente, es necesario que el equipo cuente con una dirección IP estática para la estabilidad de
+         la red ya que una dirección IP dinámica puede afectar la conectividad entre los equipos y el dominio. <br><br>
+
+         Para establecer la dirección IP en Windows Server 2016 podemos usar alguna de las siguientes opciones: <br><br>
+
+         1) Ir a la ruta Panel de control / Redes e Internet / Centro de redes y recursos compartidos / Cambiar configuración del adaptador.<br><br>
+         2) Dando clic derecho en el ícono de red ubicado en la barra de tareas y allí seleccionar la opción Centro de redes y recursos compartidos,
+         posteriormente seleccionar la opción Cambiar configuración del adaptador.<br><br>
+
+         En la ventana desplegada seleccionamos el adaptador de red actual, pulsamos clic derecho y seleccionamos la opción Propiedades. <br><br>
+
+         <img src="images/dominio7.png" alt=""> <br>
+
+         Se abrirá la siguiente ventana donde seleccionamos la línea Protocolo de Internet versión 4 y pulsamos Propiedades. <br><br>
+
+         <img src="images/dominio8.jpg" alt=""> <br>
+
+         Veremos la siguiente ventana donde debemos especificar la dirección IP a asignar al equipo.
+
+         <img src="images/dominio9.jpg" alt=""> <br>
+
+         Pulsamos Aceptar para guardar y aplicar los cambios. <br><br>
+
+         Una vez configurados el nombre y la dirección IP del servidor procedemos a instalar los roles respectivos.
+         Instalando el rol de directorio activo. El primer paso es instalar el rol de Servicios de dominio de Active Directory y para ello realizaremos
+         el siguiente proceso. <br><br>
+
+         Desde el Administrador el servidor seleccionamos la opción Agregar roles y características donde veremos el siguiente asistente, que nos indica
+         que debemos comprobar que se han completado las siguientes tareas previas: <br><br>
+
+         1) La cuenta administrador tiene una contraseña segura. <br>
+         2) Las direcciones IP como las direcciones de red estáticas, están configuradas. <br>
+         3) Las actualizaciones de Windows Update están instaladas. <br>
+
 
      </p>
     </div>
