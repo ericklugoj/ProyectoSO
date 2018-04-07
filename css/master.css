@@ -199,6 +199,9 @@ footer {
   .contenedorMenu li:first-child {
     border-top: 1px solid white;
   }
+  .menu-secundario{
+    font-size: 20px;
+  }
   #logotipo{
     height: 150px;
     width: 100%;

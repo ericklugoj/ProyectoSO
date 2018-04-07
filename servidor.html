@@ -24,8 +24,8 @@
     </header>
     <div class="contenedorCuerpo">
       <h1 class=" title-a">Servidor</h1>
-      <h4><a href="#dominio">Dominio</a> | <a href="#dhcp">DHCP</a> | <a href="#iis">IIS</a></h4>
-      <img src="images/server.png" alt="" class="serverImg" id="dominio"> <br>
+      <h4 class="menu-secundario"><a href="#dominio">Dominio</a> | <a href="#dhcp">DHCP</a> | <a href="#iis">IIS</a></h4>
+      <img src="images/server.png" class="imagen" alt="" class="serverImg" id="dominio"> <br>
       <h2 class="titulos" >Configuracion del dominio</h2>
       <p class="textos parrafo">
 
@@ -64,7 +64,7 @@
 
          Reiniciamos el equipo para que el nombre sea modificado y podemos validar desde el administrador el nuevo nombre del equipo. <br><br>
 
-         <img src="images/dominio6.png" alt=""> <br>
+         <img src="images/dominio6.png" class="imagen" alt=""> <br>
 
          Como ha sido mencionado anteriormente, es necesario que el equipo cuente con una dirección IP estática para la estabilidad de
          la red ya que una dirección IP dinámica puede afectar la conectividad entre los equipos y el dominio. <br><br>
@@ -77,15 +77,15 @@
 
          En la ventana desplegada seleccionamos el adaptador de red actual, pulsamos clic derecho y seleccionamos la opción Propiedades. <br><br>
 
-         <img src="images/dominio7.png" alt=""> <br>
+         <img src="images/dominio7.png" class="imagen" alt=""> <br>
 
          Se abrirá la siguiente ventana donde seleccionamos la línea Protocolo de Internet versión 4 y pulsamos Propiedades. <br><br>
 
-         <img src="images/dominio8.jpg" alt=""> <br>
+         <img src="images/dominio8.jpg" class="imagen" alt=""> <br>
 
          Veremos la siguiente ventana donde debemos especificar la dirección IP a asignar al equipo.
 
-         <img src="images/dominio9.jpg" alt=""> <br>
+         <img src="images/dominio9.jpg" class="imagen" alt=""> <br>
 
          Pulsamos Aceptar para guardar y aplicar los cambios. <br><br>
 
@@ -100,35 +100,35 @@
          2) Las direcciones IP como las direcciones de red estáticas, están configuradas. <br>
          3) Las actualizaciones de Windows Update están instaladas. <br><br>
 
-         <img src="images/dominio10.jpg" alt=""> <br>
+         <img src="images/dominio10.jpg" class="imagen" alt=""> <br>
 
          Pulsamos Siguiente para elegir el tipo de instalación la cual será la que está seleccionada por defecto: “Instalación basada en características
          o en roles”. <br><br>
 
-         <img src="images/dominio11.jpg" alt=""> <br>
+         <img src="images/dominio11.jpg" class="imagen" alt=""> <br>
 
          Pulsamos Siguiente y en la siguiente ventana seleccionamos el servidor donde instalaremos el rol. <br><br>
 
-         <img src="images/dominio12.jpg" alt=""> <br>
+         <img src="images/dominio12.jpg" class="imagen" alt=""> <br>
 
          Pulsamos de nuevo Siguiente y en la siguiente ventana seleccionamos la casilla “Servicios de dominio de Active Directory”.
          Lo normal es también seleccionar servidor DNS y DHCP. Pero eso ya irá en gusto y necesidades de cada empresa. <br><br>
 
-         <img src="images/dominio13.jpg" alt=""> <br>
+         <img src="images/dominio13.jpg" class="imagen" alt=""> <br>
 
          Pulsamos Siguiente y en la ventana desplegada no seleccionaremos ninguna característica por lo cual pulsamos de nuevo Siguiente
          y veremos información asociada al rol a instalar. <br><br>
 
-         <img src="images/dominio14.jpg" alt=""> <br>
+         <img src="images/dominio14.jpg" class="imagen" alt=""> <br>
 
          Pulsamos Siguiente y veremos un resumen con el rol que será instalado en el servidor. <br><br>
 
-         <img src="images/dominio15.jpg" alt=""> <br>
+         <img src="images/dominio15.jpg" class="imagen" alt=""> <br>
 
          Pulsamos el botón Instalar para iniciar el proceso de instalación del rol de Servicios de dominio de Active Directory.
          Posteriormente veremos que la instalación ha sido finalizada de manera correcta. <br><br>
 
-         <img src="images/dominio16.jpg" alt=""> <br>
+         <img src="images/dominio16.jpg" class="imagen" alt=""> <br>
 
          De esta forma hemos instalado el rol de servicios de dominio de Active Directory en Windows Server 2016. <br><br>
 
@@ -136,12 +136,12 @@
 
          Cuando hemos instalado el rol anterior podemos ver una advertencia en la parte superior del administrador del servidor: <br><br>
 
-         <img src="images/dominio17.jpg" alt=""> <br>
+         <img src="images/dominio17.jpg" class="imagen" alt=""> <br>
 
          Al desplegarla debemos seleccionar la opción Promover este servidor a controlador de domino y se desplegará el siguiente asistente donde
          lo primero que debemos definir es un nuevo bosque con el nombre de nuestro dominio, en este caso solvetic.com <br><br>
 
-         <img src="images/dominio18.jpg" alt=""> <br>
+         <img src="images/dominio18.jpg" class="imagen" alt=""> <br>
 
          Pulsamos Siguiente y en la próxima ventana debemos definir los siguientes parámetros: <br><br>
 
@@ -150,47 +150,47 @@
          3) Definir las funciones del dominio (Ser DNS, RODC, etc) <br>
          4) Contraseña DSRM (Esta aplica cuando debemos iniciar el directorio activo en modo de restauración <br><br>
 
-         <img src="images/dominio19.jpg" alt=""> <br>
+         <img src="images/dominio19.jpg" class="imagen" alt=""> <br>
 
          Pulsamos Siguiente y en la ventana desplegada sobre la delegación del DNS podemos omitirla pulsando de nuevo
          Siguiente y a continuación veremos el nombre de NetBIOS del equipo. <br><br>
 
-         <img src="images/dominio20.jpg" alt=""> <br>
+         <img src="images/dominio20.jpg" class="imagen" alt=""> <br>
 
          De nuevo pulsamos Siguiente y veremos las rutas donde se almacenarán los archivos de registro, de sistema, etc, estos valores no es recomendable
          modificarlos. <br><br>
 
-         <img src="images/dominio21.jpg" alt=""> <br>
+         <img src="images/dominio21.jpg" class="imagen" alt=""> <br>
 
          Pulsamos Siguiente y veremos un resumen con las características y funcionalidades a instalar. <br><br>
 
-         <img src="images/dominio22.jpg" alt=""> <br>
+         <img src="images/dominio22.jpg" class="imagen" alt=""> <br>
 
          Al pulsar Siguiente el sistema comprobará que todos los parámetros estén correctos para iniciar el proceso de promoción a controlador de dominio. <br><br>
          Si todos los requisitos están correctos veremos lo siguiente: <br><br>
 
-         <img src="images/dominio23.jpg" alt=""> <br>
+         <img src="images/dominio23.jpg" class="imagen" alt=""> <br>
 
          Pulsamos Instalar para iniciar el proceso de promoción a controlador de dominio en Windows Server 2016. Una vez promovido el equipo debemos reiniciar el
          sistema para que todos los cambios surtan efecto. <br><br>
 
-         <img src="images/dominio24.jpg" alt=""> <br>
+         <img src="images/dominio24.jpg" class="imagen" alt=""> <br>
 
          Validación de que el servidor ha sido promovido a controlador de dominio. Una vez el equipo se reinicie podemos validar que todo ha sido correcto desde el
          inicio de sesión ya que veremos el nombre del dominio en la ventana de login: <br><br>
 
-         <img src="images/dominio25.jpg" alt=""> <br>
+         <img src="images/dominio25.jpg" class="imagen" alt=""> <br>
 
          Ahora en el administrador del servidor podemos ver que el equipo gestiona el dominio. <br><br>
 
-         <img src="images/dominio26.jpg" alt=""> <br>
+         <img src="images/dominio26.jpg" class="imagen" alt=""> <br>
 
          A partir de este momento podremos iniciar las tareas de gestión y administración de usuarios y grupos usando Usuarios y equipos de Active Directory. <br><br>
 
-         <img src="images/dhcp.png" alt="" class="serverImg" id="dhcp"> 
+         <img src="images/dhcp.png" alt="" class="serverImg imagen" id="dhcp">
          <h2 class="titulos" >Configuracion de DHCP</h2>
 
-         <img src="images/iss.png" alt="" class="serverImg" id="iis">
+         <img src="images/iss.png" alt="" class="serverImg imagen" id="iis">
          <h2 class="titulos" >Configuracion de IIS</h2>
 
      </p>
