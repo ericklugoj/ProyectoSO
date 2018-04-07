@@ -147,7 +147,11 @@ footer {
   margin: auto;
 }
 
-#serverImg {
+.contenedorCuerpo a {
+  text-decoration: none;
+}
+
+.serverImg {
   border-radius: 25px;
 }
 
