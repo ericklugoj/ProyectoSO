@@ -310,8 +310,6 @@
           Veremos que todo ha sido creado de forma correcta. <br><br>
 
           <img data-src="images/dhcp21.png" alt="100%"> <br>
-
-
        </p>
 
          <!-- SECCION IIS -->
@@ -319,11 +317,61 @@
          <h2 class="titulos" >Configuracion de IIS</h2>
 
          <p class="textos parrafo">
-           Pulsamos Siguiente y en la ventana desplegada seleccionamos la opción Instalación basada en características y roles, pulsamos Siguiente y seleccionamos el
-           servidor donde instalaremos el rol DHCP. <br><br>
+           Desde la consola de configuración del sistema, en la sección Roles de servidor, seleccionamos Servidor web (IIS). <br><br>
 
-           Una vez seleccionado el equipo buscaremos el rol Servidor de DHCP, al activar la casilla veremos la siguiente ventana donde se indica si deseamos agregar
-           las características de DHCP. <br><br>
+           <img data-src="images/iis1.jpg" alt="100%"> <br>
+
+          Dentro de las Herramientas de administración, no olvidar la Consola de administración de IIS, para que podamos administrar nuestro servidor
+          web, aunque esto no es prioritario, si podemos gestionarla desde otro equipo donde la tengamos instalada.En algunos casos es habitual incorporar
+          también el rol de Servidor FTP, de forma que nos permita subir desde nuestro equipo, a través de Internet, el contenido a publicar en la web. <br><br>
+
+          <img data-src="images/iis2.jpg" alt="100%"> <br>
+
+          Confirmamos las opciones, pudiendo aceptar el reinicio automático del sistema en caso necesario, y pulsamos el botón Instalar. <br><br>
+
+          <img data-src="images/iis3.jpg" alt="100%"> <br>
+
+          Aunque la instalación ya está en progreso, no es necesario esperar ya que continuará en background, pudiendo pulsar el botón Cerrar. <br><br>
+
+          <img data-src="images/iis4.jpg" alt="100%"> <br>
+
+          Una característica común del panel de configuración es la banderita que nos informa sobre cómo van los procesos de instalación y de su terminación. <br><br>
+
+          <img data-src="images/iis5.jpg" alt="100%"> <br>
+
+          Tras la instalación, podemos comprobar el resultado satisfactorio de la misma. <br><br>
+
+          <img data-src="images/iis6.jpg" alt="100%"> <br>
+
+          En los paneles de Metro podremos ver el nuevo icono de la consola de Administración de Internet Information Server (IIS), en caso de haberla
+          instalado. <br><br>
+
+          <img data-src="images/iis7.jpg" alt="100%"> <br>
+
+          Como podemos ver, la instalación es bien sencilla. Ya tenemos configurado y operativo un servidor web en nuestro equipo basado en Windows Server 2012.
+          Ahora solo queda asegurarnos que se encuentra operativo y comprobar unas nociones muy básicas de funcionamiento. <br><br>
+
+          Abriendo la consola de administración de IIS, veremos que de forma automática se ha creado un sitio, llamado Default Web Site (sitio por defecto).
+          Pulsando con el botón derecho y seleccionando Explorar en el menú contextual se abrirá la carpeta donde se guarda su contenido, o sea, los archivos
+          que se han de publicar en la página. <br><br>
+
+          <img data-src="images/iis8.jpg" alt="100%"> <br>
+
+          Estos archivos con el contenido web se encuentran por defecto en la ruta: <br><br>
+
+          " c:\inetpub\wwwroot\ " <br><br>
+
+          <img data-src="images/iis9.jpg" alt="100%"> <br>
+
+          Pulsando en Default Web Site con el botón derecho y seleccionando en el menú contextual la opción Administrar sitio web, podremos seleccionar Examinar
+          para ver el resultado de la publicación desde el propio navegador Internet Explorer. <br><br>
+
+          <img data-src="images/iis10.jpg" alt="100%"> <br>
+
+          Visualización en Internet Explorer de la publicación por defecto. <br><br>
+
+          <img data-src="images/iis11.jpg" alt="100%"> <br>
+
          </p>
 
      </p>
