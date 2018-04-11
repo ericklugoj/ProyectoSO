@@ -46,6 +46,10 @@ body {
   display: block;
 }
 
+#impresion {
+  border-radius: 25px;
+}
+
 .contenedorMenu ul {
   display: inline;
   padding: 0;
@@ -53,8 +57,7 @@ body {
 
 .contenedorMenu {
   width: 100%;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
+  background: #660000;
   text-align: center;
   font-size: 24px;
   position: absolute;
@@ -62,12 +65,10 @@ body {
 }
 
 .contenedorMenu li {
-
   display: inline-block;
 }
 
 .contenedorMenu a {
-  color: white;
   text-decoration: none;
 }
 
@@ -75,7 +76,6 @@ body {
   font-weight: bold;
   height: 20px;
   width: 200px;
-  color: black;
   margin: 10px;
   text-align: center;
   font-size: 16px;
@@ -84,17 +84,17 @@ body {
 
 .menu a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: bold;
 }
 
 .menu a:hover {
   transition: 300ms;
-  color: #c50a0a;
+  color: #cc9900;
 }
 
 .seleccionado a{
-  color: #c50a0a;
+  color: #cc9900;
 }
 
 .title-a{
@@ -163,6 +163,25 @@ footer {
 
 .serverImg {
   border-radius: 25px;
+}
+
+#logo {
+  position: fixed;
+}
+
+#logotec {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  margin-top: 40px;
+  width: 15%;
+  position: absolute;
+  transition: 1s;
+}
+
+#logotec:hover {
+  width: 20%;
 }
 
 @media screen and (max-width: 500px){
