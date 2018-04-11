@@ -23,10 +23,86 @@
         </ul>
     </header>
     <div class="contenedorCuerpo">
-      <h1 class="titulos title-a">MySQL</h1>
-      <p class="textos parrafo">Sitio web con tutoriales para la instalacion y configuracion de windows server y sus servicios basicos (Dominio,DHCP,IIS,SQL y servicio de impresion). </p>
+      <h1 class="titulos title-a">Instalacion y configuracion de la base de datos</h1>
+      <p class="textos parrafo">
+        <img src="images/mysql.png" alt="" width=40%> <br>
+
+        Una vez descargado ejecutaremos el archivo MSI para iniciar el proceso de instalación de MySQL en Windows Server 2016 y veremos la siguiente ventana.
+        Allí activaremos la casilla para aceptar los términos de licencia y pulsamos en Next y ahora podemos elegir el tipo de configuración de
+        MySQL a instalar: <br><br>
+
+        <img src="images/sql1.png" alt=""> <br>
+
+        En el costado derecho veremos las respectivas funcionalidades, en este ejemplo seleccionaremos Developer Default
+        Una vez seleccionado pulsamos en Next y serán comprobados todos los requisitos y en caso de fallar alguno podemos seleccionarlo y pulsar en el botón
+        Execute para su instalación: <br><br>
+
+        <img src="images/sql2.png" alt=""> <br>
+
+        Una vez finalizada esta actualización veremos que podemos seguir adelante con la instalación: <br><br>
+
+        <img src="images/sql3.png" alt=""> <br>
+
+        Pulsamos en Next y veremos lo siguiente. Allí debemos pulsar en el botón Execute para instalar o actualizar todos los requisitos: <br><br>
+
+        <img src="images/sql4.png" alt=""> <br>
+
+        Una vez finalizado el proceso de comprobación veremos lo siguiente: <br><br>
+
+        <img src="images/sql5.png" alt=""> <br>
+
+        Pulsamos en Next y veremos lo siguiente: <br><br>
+
+        <img src="images/sql6.png" alt=""> <br>
+
+        Allí pulsamos en Next y veremos lo siguiente: <br><br>
+
+        <img src="images/sql7.png" alt=""> <br>
+
+        Allí veremos los respectivos parámetros de configuración de MySQL. Pulsamos en Next y ahora debemos asignar la respectiva contraseña de MYSQL: <br><br>
+
+        <img src="images/sql8.png" alt=""> <br>
+
+        Al pulsar en Next veremos el nombre del servicio de MySQL y podemos configurar si MySQL se ejecuta al inicio. <br><br>
+
+        <img src="images/sql9.png" alt=""> <br>
+
+        Pulsamos de nuevo en Next y podremos configurar los parámetros de plugins y extensiones: <br><br>
+
+        <img src="images/sql10.png" alt=""> <br>
+
+        Al pulsar en Next y podremos ver un resumen de los ajustes a realizar: <br><br>
+
+        <img src="images/sql11.png" alt=""> <br>
+
+        Finalmente, pulsaremos en el botón Execute para aplicar los cambios y completar la instalación.<br><br>
+
+        Para acceder a la base de datos del servidor debemos ingresar a la consola de Mysql y desde ella ingresar el comando: <br><br>
+        $ mysql -hlugoserver.com -uroot -pfortnite <br><br>
+        Donde lugoserver.com es el dominio, root el nombre de usuario y fortnite la contraseña.<br><br>
+
+
+        <h3>Definiendo cómo es almacenada la información.</h3>
+        <ul>
+          <li><strong>CREATE DATABASE</strong> se utiliza para crear una nueva base de datos vacía.</li>
+          <li><strong>DROP DATABASE</strong> se utiliza para eliminar completamente una base de datos existente.</li>
+          <li><strong>CREATE TABLE</strong> se utiliza para crear una nueva tabla, donde la información se almacena realmente.</li>
+          <li><strong>ALTER TABLE</strong> se utiliza para modificar una tabla ya existente.</li>
+          <li><strong>DROP TABLE</strong> se utiliza para eliminar por completo una tabla existente.</li>
+        </ul>
+
+        <h3>Manipulando los datos.</h3>
+        <ul>
+          <li><strong>SELECT</strong> se utiliza cuando quieres leer (o seleccionar) tus datos. </li>
+          <li><strong>INSERT</strong> se utiliza cuando quieres añadir (o insertar) nuevos datos. </li>
+          <li><strong>UPDATE </strong>se utiliza cuando quieres cambiar (o actualizar) datos existentes. </li>
+          <li><strong>DELETE</strong> se utiliza cuando quieres eliminar (o borrar) datos existentes.</li>
+          <li><strong>REPLACE</strong> se utiliza cuando quieres añadir o cambiar (o reemplazar) datos nuevos o ya existentes. </li>
+          <li><strong>TRUNCATE</strong> se utiliza cuando quieres vaciar (o borrar) todos los datos de la plantilla. </li>
+        </ul>
+      </p>
     </div>
-    <footer>Ingenieria En Sistemas Computacionales <br> Tecnologico De Mérida <br> 2018</footer>
+    <footer>Ingenieria En Sistemas Computacionales <br> Tecnologico Nacional De México <br> 2018</footer>
     <script src="js/belazy.js"></script>
     <script src="js/hammer.js"></script>
     <script>
