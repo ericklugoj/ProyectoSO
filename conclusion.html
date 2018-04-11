@@ -4,50 +4,32 @@
     <meta charset="utf-8">
     <title>Equipo Número 2</title>
     <link href="css/estilos.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/master.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+     <link rel="stylesheet" href="css/master.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
   </head>
-  <body >
+  <body>
     <header class="contenedorHeader">
-      <div>
+ <div>
       <img id="logotipo" src="images/logo.png" width="100%" border="0" alt="Logo">
       </div>
       <span class="burguer-button icon-menu" id="burguer-button"></span>
       <nav class="contenedorMenu" id="menu">
         <ul>
-        <li class="menu inicio seleccionado"><a href="index.html">INICIO</a></li>
+        <li class="menu inicio"><a href="index.html">INICIO</a></li>
         <li class="menu servidor"><a href="servidor.html">SERVIDOR</a></li>
         <li class="menu mysql"><a href="mysql.html">MYSQL</a></li>
-        <li class="menu impresora"><a href="impresora.html">IMPRESORA</a></li>
+        <li class="menu impresora seleccionado"><a href="impresora.html">IMPRESORA</a></li>
         <li class="menu conclusion"><a href="conclusion.html">CONCLUSIÓN</a></li>
         </ul>
-      </nav>
     </header>
     <div class="contenedorCuerpo">
-      <h1 class = "title-a">Bienvenido</h1>
+      <h1 class="titulos title-a">Conclusión</h1>
       <p class="textos parrafo">Sitio web con tutoriales para la instalacion y configuracion de windows server y sus servicios basicos (Dominio,DHCP,IIS,SQL y servicio de impresion). </p>
-      <h3 class = "title-a">Equipo</h3>
-      <p class = "textos">Número 2</p>
-      <h3 >Integrantes</h3>
-      <p class="textos">
-            Erick Lugo
-        <br>Jesus Lopez
-        <br>Luis Solis
-        <br>Mario Ciau
-        <br>Cristopher Cahum
-      </p>
-      <h3 class="title-a">Grupo</h3>
-      <p class="textos">4SA</p>
-      <h3 class="title-a">Materia</h3>
-      <p class="textos">Taller de sistemas operativos</p>
     </div>
     <footer>Ingenieria En Sistemas Computacionales <br> Tecnologico De Mérida <br> 2018</footer>
-    <!-- Inicio de scripts -->
     <script src="js/belazy.js"></script>
     <script src="js/hammer.js"></script>
-
     <script>
-
       var consulta = window.matchMedia('(max-width: 500px)');
       consulta.addListener(mediaQuery);
 
@@ -77,6 +59,7 @@
           selector: 'img'
       });
       var $body = document.body;
+
       var gestos = new Hammer($body);
       gestos.on('swipeleft', hideMenu);
       gestos.on('swiperight', showMenu);
