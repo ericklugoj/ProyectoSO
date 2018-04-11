@@ -48,6 +48,7 @@ body {
 
 .contenedorMenu ul {
   display: inline;
+  padding: 0;
 }
 
 .contenedorMenu {
